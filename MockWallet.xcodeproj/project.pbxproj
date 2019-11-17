@@ -18,6 +18,7 @@
 		5EA645D323807C4D00FB13BE /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA645D223807C4D00FB13BE /* ShareViewController.swift */; };
 		5EA645D623807C4D00FB13BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA645D423807C4D00FB13BE /* MainInterface.storyboard */; };
 		5EA645DA23807C4D00FB13BE /* WalletConnectShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5EA645D023807C4D00FB13BE /* WalletConnectShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5EA645E1238153E200FB13BE /* share-mock-wallet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EA645E0238153E200FB13BE /* share-mock-wallet.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		5EA645D223807C4D00FB13BE /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		5EA645D523807C4D00FB13BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5EA645D723807C4D00FB13BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA645E0238153E200FB13BE /* share-mock-wallet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "share-mock-wallet.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		5EA6459023807B3E00FB13BE = {
 			isa = PBXGroup;
 			children = (
+				5EA645E0238153E200FB13BE /* share-mock-wallet.gif */,
 				5EA6459B23807B3E00FB13BE /* MockWallet */,
 				5EA645B223807B4300FB13BE /* MockWalletTests */,
 				5EA645BD23807B4300FB13BE /* MockWalletUITests */,
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA645A923807B4300FB13BE /* LaunchScreen.storyboard in Resources */,
+				5EA645E1238153E200FB13BE /* share-mock-wallet.gif in Resources */,
 				5EA645A623807B4300FB13BE /* Preview Assets.xcassets in Resources */,
 				5EA645A323807B4300FB13BE /* Assets.xcassets in Resources */,
 			);
