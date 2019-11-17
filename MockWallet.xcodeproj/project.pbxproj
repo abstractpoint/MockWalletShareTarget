@@ -15,6 +15,9 @@
 		5EA645A923807B4300FB13BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA645A723807B4300FB13BE /* LaunchScreen.storyboard */; };
 		5EA645B423807B4300FB13BE /* MockWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA645B323807B4300FB13BE /* MockWalletTests.swift */; };
 		5EA645BF23807B4300FB13BE /* MockWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA645BE23807B4300FB13BE /* MockWalletUITests.swift */; };
+		5EA645D323807C4D00FB13BE /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA645D223807C4D00FB13BE /* ShareViewController.swift */; };
+		5EA645D623807C4D00FB13BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA645D423807C4D00FB13BE /* MainInterface.storyboard */; };
+		5EA645DA23807C4D00FB13BE /* WalletConnectShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5EA645D023807C4D00FB13BE /* WalletConnectShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = 5EA6459823807B3E00FB13BE;
 			remoteInfo = MockWallet;
 		};
+		5EA645D823807C4D00FB13BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EA6459123807B3E00FB13BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA645CF23807C4D00FB13BE;
+			remoteInfo = WalletConnectShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5EA645DE23807C4D00FB13BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5EA645DA23807C4D00FB13BE /* WalletConnectShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5EA6459923807B3E00FB13BE /* MockWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +73,10 @@
 		5EA645BA23807B4300FB13BE /* MockWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA645BE23807B4300FB13BE /* MockWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletUITests.swift; sourceTree = "<group>"; };
 		5EA645C023807B4300FB13BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA645D023807C4D00FB13BE /* WalletConnectShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WalletConnectShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA645D223807C4D00FB13BE /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5EA645D523807C4D00FB13BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5EA645D723807C4D00FB13BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EA645CD23807C4D00FB13BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +117,7 @@
 				5EA6459B23807B3E00FB13BE /* MockWallet */,
 				5EA645B223807B4300FB13BE /* MockWalletTests */,
 				5EA645BD23807B4300FB13BE /* MockWalletUITests */,
+				5EA645D123807C4D00FB13BE /* WalletConnectShare */,
 				5EA6459A23807B3E00FB13BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +128,7 @@
 				5EA6459923807B3E00FB13BE /* MockWallet.app */,
 				5EA645AF23807B4300FB13BE /* MockWalletTests.xctest */,
 				5EA645BA23807B4300FB13BE /* MockWalletUITests.xctest */,
+				5EA645D023807C4D00FB13BE /* WalletConnectShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +173,16 @@
 			path = MockWalletUITests;
 			sourceTree = "<group>";
 		};
+		5EA645D123807C4D00FB13BE /* WalletConnectShare */ = {
+			isa = PBXGroup;
+			children = (
+				5EA645D223807C4D00FB13BE /* ShareViewController.swift */,
+				5EA645D423807C4D00FB13BE /* MainInterface.storyboard */,
+				5EA645D723807C4D00FB13BE /* Info.plist */,
+			);
+			path = WalletConnectShare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +193,12 @@
 				5EA6459523807B3E00FB13BE /* Sources */,
 				5EA6459623807B3E00FB13BE /* Frameworks */,
 				5EA6459723807B3E00FB13BE /* Resources */,
+				5EA645DE23807C4D00FB13BE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5EA645D923807C4D00FB13BE /* PBXTargetDependency */,
 			);
 			name = MockWallet;
 			productName = MockWallet;
@@ -192,6 +241,23 @@
 			productReference = 5EA645BA23807B4300FB13BE /* MockWalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5EA645CF23807C4D00FB13BE /* WalletConnectShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA645DB23807C4D00FB13BE /* Build configuration list for PBXNativeTarget "WalletConnectShare" */;
+			buildPhases = (
+				5EA645CC23807C4D00FB13BE /* Sources */,
+				5EA645CD23807C4D00FB13BE /* Frameworks */,
+				5EA645CE23807C4D00FB13BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletConnectShare;
+			productName = WalletConnectShare;
+			productReference = 5EA645D023807C4D00FB13BE /* WalletConnectShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +279,9 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 5EA6459823807B3E00FB13BE;
 					};
+					5EA645CF23807C4D00FB13BE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 5EA6459423807B3E00FB13BE /* Build configuration list for PBXProject "MockWallet" */;
@@ -231,6 +300,7 @@
 				5EA6459823807B3E00FB13BE /* MockWallet */,
 				5EA645AE23807B4300FB13BE /* MockWalletTests */,
 				5EA645B923807B4300FB13BE /* MockWalletUITests */,
+				5EA645CF23807C4D00FB13BE /* WalletConnectShare */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +327,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA645CE23807C4D00FB13BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA645D623807C4D00FB13BE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EA645CC23807C4D00FB13BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA645D323807C4D00FB13BE /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +388,11 @@
 			target = 5EA6459823807B3E00FB13BE /* MockWallet */;
 			targetProxy = 5EA645BB23807B4300FB13BE /* PBXContainerItemProxy */;
 		};
+		5EA645D923807C4D00FB13BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EA645CF23807C4D00FB13BE /* WalletConnectShare */;
+			targetProxy = 5EA645D823807C4D00FB13BE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -311,6 +402,14 @@
 				5EA645A823807B4300FB13BE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5EA645D423807C4D00FB13BE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA645D523807C4D00FB13BE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +532,7 @@
 		5EA645C423807B4300FB13BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MockWallet/Preview Content\"";
@@ -453,6 +553,7 @@
 		5EA645C523807B4300FB13BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MockWallet/Preview Content\"";
@@ -554,6 +655,44 @@
 			};
 			name = Release;
 		};
+		5EA645DC23807C4D00FB13BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEMUW5JDAS;
+				INFOPLIST_FILE = WalletConnectShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstractpoint.MockWallet.WalletConnectShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EA645DD23807C4D00FB13BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEMUW5JDAS;
+				INFOPLIST_FILE = WalletConnectShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstractpoint.MockWallet.WalletConnectShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +728,15 @@
 			buildConfigurations = (
 				5EA645CA23807B4300FB13BE /* Debug */,
 				5EA645CB23807B4300FB13BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA645DB23807C4D00FB13BE /* Build configuration list for PBXNativeTarget "WalletConnectShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA645DC23807C4D00FB13BE /* Debug */,
+				5EA645DD23807C4D00FB13BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
